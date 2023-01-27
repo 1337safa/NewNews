@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_content_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/main_content_toolbar_menu"
+        app:subtitle="@string/app_name"
+        app:subtitleTextAppearance="@style/sub_title"
+        app:subtitleTextColor="@color/text_color"
+        app:titleTextColor="@color/text_color" />
+
+    <EditText
+        android:id="@+id/edtv_main_search_news"
+        style="@style/text_line_spacing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_slab"
+        android:closeIcon="@drawable/ic_close"
+        android:iconifiedByDefault="false"
+        android:imeOptions="actionSearch"
+        android:inputType="textShortMessage"
+        android:queryBackground="@android:color/transparent"
+        android:minHeight="48dp"
+        android:background="@drawable/edit_text_backgorund"
+        android:drawableEnd="@drawable/ic_search"
+        android:padding="16dp"
+        android:hint="@string/write_them_for_news"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/hint_color"
+        app:layout_constraintBottom_toTopOf="@+id/rcMainContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_content_toolbar"
+        app:showAsAction="always" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcMainContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtv_main_search_news" />
+
+    <ProgressBar
+        android:id="@+id/main_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:theme="@style/progress_bar_theme"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtv_main_search_news" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

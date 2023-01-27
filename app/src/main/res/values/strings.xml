@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="oops">Oops</string>
+    <string name="not_internet_description">Sorry, but your device is not connected to the internet! Try to connect to the internet!</string>
+    <string name="write_them_for_news">Enter a news topic…</string>
+    <string name="read_news_here">Read all about it here:</string>
+    <string name="not_data">No data found for this topic!\nCheck your request for errors!</string>
+    <string name="default_name_for_news">Name for news:</string>
+</resources>

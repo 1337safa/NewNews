@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="oops">Уупс</string>
+    <string name="not_internet_description">Извините, но ваше устройство не подключено к Интернету! Попробуйте подключиться к Интернету!</string>
+    <string name="write_them_for_news">Введите тему новостей…</string>
+    <string name="read_news_here">Прочтите все об этом здесь:</string>
+    <string name="not_data">Данные по этой теме не найдены!\nПроверьте свой запрос на наличие ошибок!</string>
+    <string name="default_name_for_news">Тема для новостей:</string>
+</resources>
